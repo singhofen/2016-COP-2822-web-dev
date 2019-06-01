@@ -1,0 +1,110 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   Programming Table Style Sheet
+   Author: Chase Singhofen
+   Date:   10/17/2016
+
+   Filename:         programs.css
+   Supporting Files: 
+
+*/
+
+
+/* Styles for Program Table */
+
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* Styles for Program Caption */
+
+table.programs caption{
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+/* Styles for Program Body */
+
+table.programs tbody td {
+	font-size: 0.7em;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+table.programs tbody tr {
+	height: 25px;
+	border: 1px solid gray;
+	
+}
+
+/* Styles for Program Header */
+
+table.programs thead {
+	color: white;
+	background-color: rgb(105, 177, 60);
+}
+
+table.programs thead th {
+	font-size: 0.7em;
+	border: 1px solid gray;
+}
+
+/* Styles for first table header (Time)  */
+
+table.programs thead th:first-of-type {
+	background-color: rgb(153, 86, 7);
+}
+
+/* Styles for the 7th (Saturday) and 8th (Sunday) header */
+
+table.programs thead th:nth-of-type(7) {
+	background-color: rgb(153, 0, 153);
+}
+table.programs thead th:nth-of-type(8) {
+	background-color: rgb(153, 0, 153);
+}
+
+/* Styles for the first column */
+
+table.programs col.timeColumn {
+	width: 10%;
+	background-color: rgb(215, 205, 151);
+}
+
+/* Styles for the second column */
+
+table.programs col.wDayColumns {
+	width: 11%;
+	background-color: rgb(236, 255, 211);
+}
+
+/* Styles for the third column */
+
+table.programs col.wEndColumns {
+	width: 17%;
+	background-color: rgb(255, 231, 255);
+}
+
+/* Three Column layout for the introductory paragraph */
+
+section#intro p {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+	
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+}

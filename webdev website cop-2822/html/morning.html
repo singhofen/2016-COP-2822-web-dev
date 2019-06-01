@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 5
+      Review Assignment
+
+      KPAF Morning Schedule
+      Author: Chase Singhofen	
+      Date:   10/17/2016
+
+      Filename:         morning.htm
+      Supporting files: kpaf2.css, kpaf.jpg, modernizr-1.5.js, 
+                        programs.css
+
+   -->
+
+  <meta charset="UTF-8" />
+      <title>KPAF Radio Morning Schedule</title>
+      <script src="modernizr-1.5.js"></script>
+		<link href="kpaf2.css" rel="stylesheet" type="text/css" />
+		<link href="programs.css" rel="stylesheet" type="text/css" />
+	<style>
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   KPAF General Style Sheet
+  
+
+   Filename:         kpaf2.css
+   Supporting Files: none
+
+*/
+
+/* Default styles */
+
+* {
+   margin: 0px;
+   list-style: none;
+}
+
+header, section, footer, nav {
+   display: block;
+}
+
+
+
+/* Body styles */
+body {
+   background-color: white;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0px auto;
+   width: 1000px;
+}
+
+/* Header styles */
+header {
+   background-color: rgb(215, 205, 151);
+   border-bottom: 1px solid rgb(105, 177, 60);
+   color: white;
+}
+
+header h1 {
+   color: white; 
+   background-color: rgb(105, 177, 60);
+   font-size: 1.1em; 
+   padding: 5px 0px 5px 12px;
+}
+
+header h1 em {
+   font-size: 0.7em;
+}
+
+
+
+/* Navigation list styles */
+
+header nav ul li {
+   display: inline; 
+   font-size: 0.7em; 
+   font-family: 'Courier New', monospace;
+   background-color: rgb(215, 205, 151);
+   padding: 0px 10px; 
+   margin: 0px;
+}
+
+header nav ul li a {
+   text-decoration: none; 
+   color: rgb(105, 177, 60);
+}
+
+
+header nav ul li a:hover {
+   color: rgb(153, 0, 153);
+}
+
+
+
+/* intro section styles */
+
+#intro {
+   width: 100%;   
+}
+
+
+
+#intro hgroup h2 {
+   color: white;  
+   background-color: rgb(153, 0, 153);
+   font-size: 1.1em; 
+   letter-spacing: 5px;
+   padding: 5px 0px 5px 12px;
+}
+
+#intro p {
+   line-height: 1.4em;
+   margin: 15px;
+}
+
+
+
+
+/* Footer styles */   
+
+footer {
+   clear: left;
+   padding-top: 10px;
+}
+
+footer address {
+   font-size: 0.65em;
+   font-style: normal;
+   text-align: center;
+   color: white;
+   background-color: rgb(105, 177, 60);
+   margin: 20px 0px;
+}
+
+
+/* Styles for Program Table */
+
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* Styles for Program Caption */
+
+table.programs caption{
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+/* Styles for Program Body */
+
+table.programs tbody td {
+	font-size: 0.7em;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+table.programs tbody tr {
+	height: 25px;
+	border: 1px solid gray;
+	
+}
+
+/* Styles for Program Header */
+
+table.programs thead {
+	color: white;
+	background-color: rgb(105, 177, 60);
+}
+
+table.programs thead th {
+	font-size: 0.7em;
+	border: 1px solid gray;
+}
+
+/* Styles for first table header (Time)  */
+
+table.programs thead th:first-of-type {
+	background-color: rgb(153, 86, 7);
+}
+
+/* Styles for the 7th (Saturday) and 8th (Sunday) header */
+
+table.programs thead th:nth-of-type(7) {
+	background-color: rgb(153, 0, 153);
+}
+table.programs thead th:nth-of-type(8) {
+	background-color: rgb(153, 0, 153);
+}
+
+/* Styles for the first column */
+
+table.programs col.timeColumn {
+	width: 10%;
+	background-color: rgb(215, 205, 151);
+}
+
+/* Styles for the second column */
+
+table.programs col.wDayColumns {
+	width: 11%;
+	background-color: rgb(236, 255, 211);
+}
+
+/* Styles for the third column */
+
+table.programs col.wEndColumns {
+	width: 17%;
+	background-color: rgb(255, 231, 255);
+}
+
+/* Three Column layout for the introductory paragraph */
+
+section#intro p {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+	
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+}
+
+
+
+
+
+
+</style>	
+   </head>
+
+   <body>
+      <header>
+         <h1>| Listener supported <em>since</em> 1966</h1><h1><a href="index.html">Back to: Biography</a></h1>
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Schedule</a></li>
+               <li><a href="#">Programs</a></li>
+               <li><a href="#">Music</a></li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="#">Listen Live</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Support KPAF</a></li>
+			   
+			   
+            </ul>
+         </nav>
+      </header>
+
+      <section id="intro">
+         <hgroup>
+            <h1><img src="kpaf.jpg" alt="KPAF" /></h1>
+            <h2>KPAF Morning Schedule</h2>
+         </hgroup>
+
+         <p>KPAF airs listener-supported public radio in Bismarck, North Dakota from 
+            5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
+            of our broadcast or download programs from our <a href="#">Podcast</a>. 
+            <br />Please refer below for our current morning schedule.
+         </p>
+			<table class="programs"
+				summary=" Lists the morning programs aired by KPAF
+				from 5:00 a.m. to 12:00 p.m. (central Time)">
+				
+			<caption>All Times Central</caption>
+			
+			<colgroup>
+				<col class="timeColumn" />
+				<col class="wDayColumns" span="5" />
+				<col class="wEndColumns" span="2" />
+			</colgroup>
+			
+			 <thead>
+			  <tr>
+				<th>Time</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+				<th>Sunday</th>
+				</tr>
+			  </thead>
+			  
+			  <tbody>
+			  <tr>
+				<th>5:00</th>
+				<td rowspan="4" colspan="5">Dawn Air</td>
+				<td rowspan="4">Dawn Air Weekends</td>
+				<td rowspan="2">Sunday Magazine</td>
+			  </tr>
+			  <tr>
+				<th>5:30</th>
+			  </tr>
+			  <tr>
+				<th>6:00</th>
+				<td rowspan="2">Weekend Reflections</td>
+			  </tr>
+			  <tr>
+				<th>6:30</th>
+			  </tr>
+			  <tr>
+				<th>7:00</th>
+				<td colspan="5">Local News</td>
+				<td rowspan="2">Weekend Wrap</td>
+				<td rowspan="2">Radio U</td>
+			  </tr>
+			  <tr>
+				<th>7:30</th>
+				<td colspan="5">World News Feed</td>
+			  </tr>
+			   <tr>
+				<th>8:00</th>
+				<td rowspan="4" colspan="5">Classical Roots</td>
+				<td rowspan="3">What Can You Say?</td>
+				<td rowspan="4">University on the Air</td>
+			  </tr>
+			  <tr>
+				<th>8:30</th>
+			  </tr>
+			  <tr>
+				<th>9:00</th>
+			  </tr>
+			  <tr>
+				<th>9:30</th>
+				<td rowspan="3">Animal Talk</th>
+			  </tr>
+			  <tr>
+				<th>10:00</th>
+				<td rowspan="4" colspan="5">Symphony City</th>
+				<td>World Play</td>
+			  </tr>
+			  <tr>
+				<th>10:30</th>
+				<td>Brain Stew</td>
+			  </tr>
+			  <tr>
+				<th>11:00</th>
+				<td rowspan="3">Opera Live from the East Coast</th>
+				<td>The Inner Mind</td>
+			  </tr>
+			  <tr>
+				<th>11:30</th>
+				<td>Grammer Rules!!</th>
+			  </tr>
+			  <tr>
+				<th>12:00</th>
+				<td colspan="5">Book Club</th>
+				<td>Weekend Wrap</td>
+			  </tr>
+			  
+			  </tbody>
+				</table>
+			
+			
+      </section>
+
+
+      <footer>
+         <address>
+            KPAF &#183; 
+            4300 Magnolia Lane &#183;
+            Bismarck, ND 58504 &#183;
+            (701) 555 - 5611
+         </address>
+      </footer>
+
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 3
+      Review Assignment
+
+      Sunny Acres Holidays Page
+      Author: Chase Singhofen
+      Date:   09/26/2016
+
+      Filename:         holiday.htm
+      Supporting files: holiday.jpg, hs_layout.css, hs_styles.css,
+                        modernizr-1.5.js, salogo.png
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Holidays at Sunny Acres</title>
+      <script src="modernizr-1.5.js"></script>
+	  <link href="hs_layout.css" rel="stylesheet" type="text/css" />
+	  <link href="hs_styles.css" rel="stylesheet" type="text/css" />
+	 	<style>
+			/*
+   New Perspectives on HTML
+   Tutorial 3
+   Review Assignment
+
+   Sunny Acres Text and Color Styles
+   Author: Chase Singhofen
+   Date:   09/26/2016
+
+   Filename:         hs_styles.css
+   Supporting Files: CloisterBlack.eot, CloisterBlack.svg,
+                     CloisterBlack.ttf, CloisterBlack.woff
+
+*/
+/* Dieter Steffmann fonts are not licensed and are considered freeware. Full repository of Dieter's fonts can be found here: http://moorstation.org/typoasis/designers/steffmann/index.htm */
+
+@font-face { 
+
+font-family: 'CloisterBlack'; 
+
+src: url('CloisterBlack.eot'); 
+
+src: local(':&'),     
+
+url('CloisterBlack.woff') format('woff'),     
+
+url('CloisterBlack.tff') format('truetype'),     
+
+url('CloisterBlack.svg#cloister') format('svg');
+
+}
+
+
+body { 
+
+background-color: white; 
+
+font-family: Trebuchet MS, Helvetica, sans-serif;
+
+}
+
+
+nav ul { 
+
+background-color: rgb(248, 175, 175); 
+
+line-height: 3.5em; 
+
+list-style-type: none; 
+
+padding-left: 0; 
+
+text-indent: 5px;
+}
+
+
+nav ul li:first-child { 
+
+font-size: 150%; 
+
+text-transform: lowercase; 
+
+font-weight: bold;
+
+}
+
+
+nav a { 
+
+text-decoration: none; 
+
+color: white;
+
+}
+
+
+nav li:hover { 
+
+background-color: rgb(148, 51, 62);
+
+}
+
+
+nav a:hover { 
+
+color: yellow;
+
+}
+
+
+figure { 
+
+background-color: rgb(248, 175, 175);
+
+}
+
+
+#photo, figcaption { 
+
+text-align: center;
+
+}
+
+
+figcaption { 
+
+font-size: 14px; 
+
+font-style: italic; 
+
+text-align: center; 
+
+font-weight: bold;
+
+}
+
+
+section h1 { 
+
+background-color: rgb(148, 51, 62); 
+
+color: white; 
+
+font-family: 'CloisterBlack', 'fantasy'; 
+
+font-size: 2.5em; 
+
+font-style: none; 
+
+letter-spacing: 0.3em; 
+
+line-height: 2em; 
+
+text-indent: 5px;
+
+}
+
+
+section h2 { 
+
+background-color: rgb(182, 134, 52); 
+
+color: white; 
+
+color: rgba(255, 255, 255, 0.8); 
+
+font-weight: normal; 
+
+letter-spacing: 0.7em; 
+
+text-indent: 1em;
+
+}
+
+
+section ul li { 
+
+list-style-image: url('flake.png');
+
+}
+
+
+footer address { 
+
+background-color: rgb(148, 51, 62); 
+
+color: white; 
+
+color: rgba(255, 255, 255, 0.8); 
+
+font-weight: normal; 
+
+text-transform: lowercase; 
+
+font-size: 0.8em; 
+
+line-height: 4em; 
+
+font-family: Palatino Linotype, Book Antiqua, Palatino, serif; 
+
+text-align: center;
+
+}
+</style>
+
+		 
+		 
+		 
+   </head>
+   
+
+   <body>
+
+      <header>
+         <h1>
+            <img src="salogo.png" alt="Sunny Acres" />
+         </h1>
+
+      </header>
+   
+      <nav>   
+         <ul>
+			<li><a href="index.html">Biography</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="maze.html">The Corn Maze</a></li>
+            <li><a href="haunted.html">The Haunted Barn</a></li>
+            <li><a href="petting.html">Petting Barn</a></li>
+            <li><a href="produce.html">The Farm Shop</a></li>
+            <li><a href="holiday.html">Holidays on the Farm</a></li>
+         </ul>
+      </nav>
+
+      <section>
+         <header>
+            <h1>Holidays on the Farm</h1>
+         </header>
+
+         <figure>
+            <img src="holiday.jpg" alt="Holiday Photo" id="photo" width="250px" height="250px" />
+            <figcaption>
+               <center><i>Saint Nick visits Sunny Acres</i></center>
+            </figcaption>
+         </figure>
+
+         <p>
+            This year Sunny Acres becomes Wintery Acres as we institute 
+            our first Holidays on the Farm. Join us on weekends from 
+            November 23 through January 5 for holiday cheer and festivities.
+         </p>
+         <p>The Sunny Acres Farm Shop will be decked out in bright and 
+            colorful holiday decorations with special prices on garlands, 
+            tinsel, ornaments, and wreaths. Be sure to sample our homemade 
+            egg nog and bring some home for your family.
+         </p>
+         <p>The trails and hills around Sunny Acres will be alive with fun 
+            and games. Come join us for sleigh rides or zoom down our 
+            awesome sledding hill (weather permitting). Sunny Acres is 
+            adjacent to Dawson Park, which has a vast network of cross 
+            country ski trails for every level of skier.
+         </p>
+         <p>We've even decorated our barn for the holidays. Come visit 
+            Santa's stables, where you might even see a few reindeer--perhaps
+            even one with a red nose!
+         </p>
+
+
+         <h2>Hours</h2>
+          
+
+		<ul>
+            <li>Saturdays: 10 am - 5 pm</li>
+            <li>Sundays: 11 am - 3 pm</li>
+            <li>Closed: December 25, 31, January 1</li>
+         </ul>
+
+         <h2>Directions</h2>
+         <ul>
+            <li>From Council Bluffs, proceed east on I-80</li>
+            <li>Take Exit 38 North to the Drake Frontage Road</li>
+            <li>Turn right on Highway G</li>
+            <li>Proceed east for 2.5 miles</li>
+            <li>Sunny Acres is on your left; watch for the green sign</li>
+         </ul>
+
+
+      </section>
+      
+      <footer>
+         <address><div id="footer" style="background:maroon"><div id="footer" style="color:white">
+           <center> SUNNY ACRES &nbsp;&#9728;&nbsp;
+            TAMMY &amp; BRENT NIELSON &nbsp;&#9728;&nbsp;
+            1977 HIGHWAY G &nbsp;&#9728;&nbsp;
+            COUNCIL BLUFFS, IA &nbsp;&nbsp; 51503</center>
+         </address>
+      </footer>
+
+   </body>
+
+</html>

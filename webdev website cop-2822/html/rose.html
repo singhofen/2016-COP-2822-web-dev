@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 4
+      Review Assignment
+
+      Cycle Pathology Rose Hill Rally Page
+      Author: Chase Singhofen
+      Date:   10/9/2016
+
+      Filename:         rose.htm
+      Supporting files: alisha.png, cp_logo2.png,
+                        modernizr-1.5.js, race.css, 
+                        slide01.png - slide08.png
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Rose Hill Rally</title>
+      <script src="modernizr-1.5.js"></script>
+		<link href="race.css" rel="stylesheet" type="text/css" />
+		<style>
+		/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Review Assignment
+
+   Cycle Pathology Style Sheet
+   Author: Chase Singhofen
+   Date:   10/15/16
+
+   Filename:         race.css
+   Supporting Files: 
+
+*/
+
+/* Display HTML5 Structural elements as blocks */
+
+article, aside, figure, figcaption, hgroup, header, section, nav {
+	
+	display: block;
+}
+
+/* Set the default page element styles */
+
+body * {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Styles for the page body */
+
+body { 
+	position: relative;
+	width: 98%;
+	min-width: 1000px;
+	max-width: 1400px;
+
+}
+
+/* Styles for the Page Header */
+
+header {
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 20%;
+	padding-bottom: 500px;
+}
+
+header img{
+	display: inline;
+	width: 100%;
+}
+
+/* General Navigation List Style */
+
+nav a {
+	text-decoration: none;
+	
+}
+
+/* Horizontal Navigation List */
+
+nav.horizontal {
+	margin-left: 20%;
+	width: 80%;
+}
+
+nav.horizontal li {
+	background-color: rgb(49, 38, 31);
+	display: block;
+	font-size: 85%;
+	float: left;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	width: 20%;
+}
+
+nav.horizontal li a {
+	color: white;
+}
+
+nav.horizontal li a:hover {
+		color: rgb(215, 181, 151);
+
+}
+
+
+/* Vertical Navigation List */
+
+nav.vertical li {
+	font-size: 85%;
+	list-style-type: none;
+
+}
+
+.newgroup {
+	padding-top: 25px
+}
+
+nav.vertical a {
+	color: white;
+	display: block;
+	text-indent: 10px;
+}
+
+nav.vertical a:hover {
+	background-color: rgb(51, 51, 51);
+	outline: 2px solid rgb(215, 181, 151);
+}
+
+/* Main Section Styles */
+
+#main {
+	clear: left;
+	float: left;
+	margin-left: 21%;
+	margin-top: 20px;
+	width: 49%;	
+}
+
+
+#main h1 {
+	color: rgb(189, 131, 82);
+	font-size: 180%;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+#main p {
+	margin: 15px;
+	
+}
+
+#main ul li {
+	list-style-type: disc;
+	margin: 25px;
+	margin-bottom: 10px;
+}
+
+/* Aside Styles */
+
+aside {
+	border: 3px solid rgb(149, 91, 42);
+	color: rgb(149, 91, 42);
+	float: right;
+	margin: 10px;
+	width: 50%;
+	border-radius: 30px; 
+}
+
+aside p {
+	font-size: 90%;
+	margin: 20px;
+}
+
+/* Article Styles */
+
+article {
+	background-color: rgb(215, 181, 151);
+	float: left;
+	width: 29%;
+	margin-left: 1%;
+}
+
+article hgroup {
+	background: rgb(189, 131, 82) url(alisha.png) bottom right no-repeat;
+	color: rgb(215, 181, 151);
+	margin-bottom: 10px;
+	height: 60px;
+	text-indent: 20px;
+}
+
+article hgroup h1 {
+	font-size: 150%;
+	font-weight: normal;
+	
+}
+
+article hgroup h2 {
+	font-size: 110%;
+	font-weight: normal;
+	
+}
+
+article p {
+	font-size: 90%;
+	margin: 15px;
+}
+
+/* Figure Styles */
+
+figure {
+	background-color: rgb(149, 91, 42);
+	clear: left;
+	float: left;
+	margin-left: 21%;
+	width: 79%;
+}
+
+figure div {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+figure img {
+	margin: 10px;
+	border-radius: 10px;
+}
+
+figcaption {
+	background: white;
+	font-size: 80%;
+	font-style: italic;
+	text-align: center;
+	margin-top: 5px;
+}
+</style>
+   </head>
+
+   <body>
+
+      <header>
+	  
+	
+
+
+
+            <img src="images/cp_logo2.png" alt="Cycle Pathology" />
+
+            <nav class="vertical">
+               <ul>
+			   <a href="index.html">Biography</a>
+               <li><a href="#">Events Page</a></li>
+			   
+
+               <li class="newgroup"><a href="#">Rose Hill Rally</a></li>
+               <li><a href="#">Tour the Palisades</a></li>
+               <li><a href="#">Gunnison Challenge</a></li>
+               <li><a href="#">Steamboat Springs Rally</a></li>
+               <li><a href="#">Copper Triangle</a></li>
+               <li><a href="#">Durango Tour</a></li>
+               <li><a href="#">Montrose Meander</a></li>
+
+               <li class="newgroup"><a href="#">Route Sheets &amp; Maps</a></li>
+               <li><a href="#">Grand Junction Bike Fest</a></li>
+               <li><a href="#">Off-Road Cycling</a></li>
+               <li><a href="#">Newsletter</a></li>
+               <li><a href="#">Photo Album</a></li>
+               <li><a href="#">Editor</a></li>
+               <li><a href="#">Sponsors</a></li>
+
+               <li class="newgroup"><a href="#">Cycling Links</a></li>
+               <li><a href="#">Colorado Cycling Groups</a></li>
+               <li><a href="#">U.S. Bike Federation</a></li>
+               <li><a href="#">Tips &amp; Tricks</a></li>
+
+               <li class="newgroup"><a href="#">About Cycle Pathology</a></li>
+            </ul>
+         </nav>
+
+      </header>
+
+
+      <nav class="horizontal">   
+         <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEMBERS ONLY</a></li>
+            <li><a href="#">MARKET PLACE</a></li>
+            <li><a href="#">MESSEGE BOARD</a></li>
+            <li><a href="#">CONTACT INFO</a></li>
+         </ul>
+      </nav>
+
+
+
+      <section id="main">
+
+         <aside>
+            <p>The Grand Junction Neonatal Intensive Care Unit offers comprehensive neonatal 
+               diagnostic and treatment facilities for critically ill newborns. We're dedicated 
+               to providing the highest quality care for all newborns, ranging from healthy 
+               neonates to sick or premature newborns requiring close observation or intensive care.
+            </p>
+            <p>All of the neonatologists are board certified. We believe it's critical that our 
+               clinicians learn about the latest advances in neonatal intensive care to
+               better serve the community of Grand Junction.
+            </p>
+         </aside>
+
+         <h1>Rose Hill Rally</h1>
+         <p>
+            The Grand Junction Neonatal ICU is proud to sponsor this
+            year's Rose Hill Rally. Please join us and Cycle Pathology for the
+            Century Ride, Metric Century (62 miles), or 50K (31 miles). Rest stations
+            and aid stations will be spaced throughout the Century and Metric Century
+            routes.
+         </p>
+         <ul>
+            <li>Come to Grand Junction a day early. Visit historic downtown Grand Junction, 
+                explore the Grand Valley, ride the Colorado National Monument, or tour 
+                local wineries.
+            </li>
+            <li>Riders begin the course between 7:00 a.m. and 9:00 a.m. for both the Metric
+                Century and the 50K distance. Pick up your ride packet at Canyon View Park 
+                between 6:00 a.m. and 9:00 a.m.
+            </li>
+            <li>Entry fee includes rider breakfast &amp; hot lunch, Rose Hill Rally t-shirt, 
+                and course map.
+            </li>
+            <li>Stay and enjoy your post-ride meal with music provided by the Dam Busters.
+            </li>
+            <li>Teams of six or more riders will receive special t-shirts. Team entry forms must 
+                be received two weeks prior to the rally.
+            </li>
+         </ul>
+
+      </section>
+
+
+
+      <article>
+
+         <hgroup>
+            <h1>Ride the Century</h1>
+            <h2>&mdash; Alisha Smith</h2>
+         </hgroup>
+
+         <p>While riding 100 miles in a day may sound extreme, most casual cyclists can complete 
+            a century if they follow a comprehensive training routine. Your bike should be comfortable
+            and fit you well. Consider having a tune-up before the ride, and carry a spare tire 
+            and patch kit, tools, and a pump.
+         </p>
+         <p>If you're not a regular cyclist, start your training at least 12 weeks before your
+            century. Hills are a great way to train for your ride, and don't forget to allow
+            for recovery days after your longer rides.
+         </p>
+         <p>A few days prior to the ride, you should keep hydrated and cut back on caffeine and
+            alcohol. On the day of your century, eat a light breakfast of high-carbohydrate foods 
+            and drink lots of water. On the ride, drink water or a sports drink <em>before</em>
+            you're thirsty.
+         </p>
+         <p>A century isn't a race, so adopt a relaxed pace that you can follow for several
+            hours. Alter your position throughout your ride, getting up off the saddle,
+            stretching your back, and moving your hand position. The ride goes easier if 
+            you share it with a friend or two.
+         </p>
+         <p>Above all, <em>enjoy the ride</em>! Most centuries are designed to go through
+            scenic areas of the state. Peddle on and remember to watch the scenery.
+         </p>
+      </article>
+
+
+
+
+      <figure>
+         <div>
+            <img src="images/slide01.png" alt="" />
+            <img src="images/slide02.png" alt="" />
+            <img src="images/slide03.png" alt="" />
+            <img src="images/slide04.png" alt="" />
+            <img src="images/slide05.png" alt="" />
+            <img src="images/slide06.png" alt="" />
+            <img src="images/slide07.png" alt="" />
+            <img src="images/slide08.png" alt="" />
+         </div>
+         <figcaption>Pictures from Last Year's Rose Hill Rally!</figcaption>
+      </figure>
+
+
+   </body>
+
+</html>

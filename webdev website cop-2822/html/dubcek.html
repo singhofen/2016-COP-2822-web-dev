@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 8
+      Review Assignment
+
+      Dubcek Family Page
+      Author: chase singhofen
+      Date:   november 19, 2016
+
+      Filename:         dubceck.htm
+      Supporting files: dfbase.css, dfeffects.css, dfgradient.txt, dflayout.css,
+                        dfmobile.css, dfprint.css, family.png,
+                        link01.png - link08.png, modernizr-1.5.js, paper.png,
+                        tblogo.png, tblogo_sm.png
+
+   -->
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width,
+                                     initial-scale=1.0, maximum-scale=1.0" />
+
+      <title>Dubcek Family</title>
+      <script src="modernizr-1.5.js"></script>
+
+      
+      <link href="dfbase.css" rel="stylesheet" />
+      <link href="dflayout.css" rel="stylesheet" media="screen and (min-width: 501px)" />
+      <link href="dfeffects.css" rel="stylesheet" media="screen and (min-width: 501px)" />
+      <link href="dfprint.css" rel="stylesheet" media="print" />
+      <link href="dfmobile.css" rel="stylesheet" media="only screen (max-width: 500px)" />
+       
+      <!-- Style sheet links for Internet Explorer prior to Version 8 -->
+      <!--[if lt IE 8]>
+          <link href="dflayout.css" rel="stylesheet" media="screen" />
+          <link href="dfeffects.css" rel="stylesheet" media="screen" />
+      <! [endif]-->
+<style>
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Review Assignment
+
+   Tree and Book Style Sheet
+
+   Filename:         dfbase.css
+   Supporting Files: 
+
+*/
+
+/* Basic styles to be used with all devices and under all conditions */
+
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   margin: 0px;
+   width: 100%;
+}
+
+body * {
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+
+}
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Review Assignment
+
+   Dubceck Family Style Sheet
+
+   Filename:         dflayout.css
+   Supporting Files: tblogo.png
+
+*/
+
+/* Layout styles for desktop screen display */
+
+
+
+/* Body styles */
+
+body {
+   background-color: rgb(230, 252, 172);
+   margin: 0px auto;
+   width: 960px;
+}
+
+
+
+/* Header styles */
+   
+header {
+   background: rgb(18, 15, 12) url(tblogo.png) top left no-repeat;
+   border-bottom: 1px solid rgb(18, 15, 12);
+   height: 120px;
+   width: 100%;
+}
+
+header h1 {
+   line-height: 78px;
+   text-align: left;
+   visibility: hidden;
+   width: 100%;
+}
+
+
+/* Navigation list in header */
+
+header nav {
+   background-color: rgb(18, 15, 12);
+   height: 42px;
+   margin-left: 124px;
+}
+
+header nav li {
+   display: block;
+   float: left;
+   line-height: 42px;
+   text-align: center;
+   width: 20%;
+}
+
+header nav li a {
+   color: white;
+   font-variant: small-caps;
+   font-size: 12px;
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+header nav li a:hover {
+   color: rgb(230, 252, 171);
+}
+
+
+
+/* Page section styles */
+
+section#page {
+   background-color: white;
+   position: relative;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+/* Page section navigation list styles */
+
+section#page nav.horizontal {
+   width: 100%;
+}
+
+section#page nav.horizontal li {
+   display: block;
+   float: left;
+   height: 20px;
+   width: 20%;
+}
+
+section#page nav.horizontal li a {
+   display: block;
+   border: 1px solid rgb(18, 15, 12);
+   color:white;
+   background-color: rgb(90, 127, 0);
+   text-align: center;
+   line-height: 20px;
+   font-size: 12px;
+}
+
+section#page nav.horizontal li:first-of-type a {
+   background-color: rgb(50, 97, 0);
+}
+
+
+
+/* Vertical navigation list styles */
+
+nav#familyLinks {
+   background-color: rgb(231, 231, 231);
+   position: absolute;
+   top: 22px;
+   left: 0px;
+   width: 280px;
+   height: 790px;
+}
+
+nav#familyLinks ul {
+   margin-left: 15px;
+}
+
+nav#familyLinks li {
+   display: block;
+   float: left;
+   margin: 10px;
+   width: 100px;
+}
+
+nav#familyLinks img {
+   border: 0px;
+   width: 100%;
+}
+
+nav#familyLinks span {
+   display: block;
+   font-size: 10px;
+   text-align: center;
+   margin: 7px auto;
+}
+
+nav#familyLinks a {
+   color: black;
+}
+
+
+
+/* Main section article styles */
+
+section#page article {
+   background-color: white;
+   position: absolute;
+   top: 22px;
+   left: 280px;
+   width: 680px;
+   height: 790px;
+}
+
+section#page article h1 {
+   color: rgb(90, 127, 0);
+   font-size: 42px;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing: 5px;
+   text-align: center;
+   padding-top: 10px;
+   width: 100%;
+}
+
+section#page article img {
+   display: block;
+   margin: 5px auto;
+   width: 75%;
+}
+
+section#page article p {
+   font-size: 16px;
+   margin: 20px 30px 0px 20px;
+   text-align: justify;
+}
+
+/* Page footer styles */
+
+footer {
+   margin-top: 812px;
+   font-size: 10px;
+   border-top: 1px solid rgb(18, 15, 22);
+   padding-bottom: 20px;
+   padding-top: 10px;
+   word-spacing: 5px;
+   text-indent: 5px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+//
+#familyLinks {
+    -moz-box-shadow: inset rgba(0, 0, 0, .6) -10px 0px 15px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, .6) -10px 0px 15px;
+    box-shadow:inset rgba(0, 0, 0, .6) -10px 0px 15px;
+}
+
+#familyLinks img {
+    -moz-box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+    box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+}
+
+/* Rotate Styles */
+
+#familyLinks img:hover {
+    -o-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    opacity: 1
+}
+
+/* Style rule to add a horizontal gradient from left to right to the 
+   background of the article element */
+
+article {
+    background: -o-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -ms-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -moz-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -webkit-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    
+}
+
+/* Heading text styles */
+
+section#page h1 {
+    text-shadow: black 1px 1px 0px,
+                 rgba(30, 57, 0, .8) 5px 5px 10px;
+}
+
+/* Border image style */
+
+article img {
+    border-width: 10px;
+    
+    -o-border-image: url(paper.png) 70 repeat;
+    -moz-border-image: url(paper.png) 70 repeat;
+    -webkit-border-image: url(paper.png) 70 repeat;
+    border-image: url(paper.png) 70 repeat;
+}
+
+
+
+</style>
+
+   </head>
+
+      <header>
+         <h1>Tree and Book</h1>
+         <nav class="horizontal">
+         <li>   <a href="index.html">Chase's Bio Page</a></li>
+            <li><a href="#">My Family</a></li>
+            <li><a href="#">Geneology FAQ</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Search</a></li>
+         </nav>
+      </header>
+
+      <section id="page">
+         <nav class="horizontal">
+            <ul>
+               <li><a href="#">Cover</a></li>
+               <li><a href="#">Photos</a></li>
+               <li><a href="#">Articles</a></li>
+               <li><a href="#">Timeline</a></li>
+               <li><a href="#">Messages</a></li>
+            </ul>
+         </nav>
+                   
+         <article>
+            <h1>The Dubcek Family</h1>
+            <img id="family" src="family.png" alt="" />
+            <p>
+               Stanislaw and Irena Dubcek and their six children (Peter,
+               Nadine, Robert, Vera, Karen, Jan) lived in Waseca, Minnesota.
+               Stanislaw, an immigrant from Bohemia, worked at the 
+               Harris Tool and Die Company from 1928 until his retirement
+               in 1968 as plant manager. Irena was active in her local parish
+               and was an accomplished seamstress. The family also owned  
+               a small farm where they raised livestock and cultivated 
+               vegetables.
+            <p>Stanislaw died in 1981 and Irena in 2005.
+               Daughter Karen passed away in 2001, Peter in 2002, and
+               Nadine in 2009. The three surviving children still live
+               in the Waseca area. At the present time, the extended Dubcek 
+               family has grown to include 24 grandchildren and 31 
+               great-grandchildren.               
+            </p>
+         </article>
+
+         <nav id="familyLinks">
+            <ul>
+               <li class="parentList"><a href="#"><img src="link01.png" alt="" />
+                   <span>Stanislaw (1903 - 1981)</span>
+                   </a>
+               </li>
+               <li class="parentList"><a href="#"><img src="link02.png" alt="" />
+                   <span>Irena (1910 - 2005)</span>
+                   </a>
+               </li>
+
+               <li class="childList"><a href="#"><img src="link03.png" alt="" />
+                   <span>Peter (1931 - 2002)</span>
+                   </a>
+               </li>
+               <li class="childList"><a href="#"><img src="link04.png" alt="" />
+                   <span>Nadine (1932 - 2009)</span>
+                   </a>
+               </li>
+               <li class="childList"><a href="#"><img src="link05.png" alt="" />
+                   <span>Robert (1934 - )</span>
+                   </a>
+               </li>
+               <li class="childList"><a href="#"><img src="link06.png" alt="" />
+                   <span>Vera (1936 - )</span>
+                   </a>
+               </li>
+               <li class="childList"><a href="#"><img src="link07.png" alt="" />
+                   <span>Karen (1939 - 2001)</span>
+                   </a>
+               </li>
+               <li class="childList"><a href="#"><img src="link08.png" alt="" />
+                   <span>Jan (1944 - )</span>
+                   </a>
+               </li>
+            </ul>
+         </nav>
+      </section>
+
+      <footer>
+         Tree and Book &copy; 2014 English (US)
+         <span>
+            <a href="#">About</a>
+            <a href="#">Developers</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help</a>
+         </span>
+      </footer>
+
+   </body>
+
+</html>
